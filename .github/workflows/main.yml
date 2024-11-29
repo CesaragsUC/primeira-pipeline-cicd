@@ -23,6 +23,8 @@ jobs:
         tags: | 
           cesarags/aula-primeira-pipeline:v${{ github.run_number }} 
           cesarags/aula-primeira-pipeline:latest 
+ 
+ # verificar se o cluster k8s foi criado
   CD:
     runs-on: ubuntu-latest
     needs: [CI]
